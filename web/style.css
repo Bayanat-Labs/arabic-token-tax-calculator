@@ -1,0 +1,154 @@
+/* IBM Plex Sans Arabic 1.005, the unmodified WOFF2 files of IBM's @ibm/plex-sans-arabic 1.1.0
+   (SIL OFL 1.1, Reserved Font Name "Plex"; fonts/OFL.txt). */
+@font-face { font-family: "Plex Arabic"; src: url("fonts/IBMPlexSansArabic-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Arabic"; src: url("fonts/IBMPlexSansArabic-SemiBold.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+
+:root {
+  --bg: #ffffff; --surface: #f5f5f7; --card: #ffffff; --ink: #0b0b0d; --muted: #5f5f6b; --line: #e4e3ec;
+  --accent: #4f46e5; --accent-ink: #ffffff; --accent-wash: #efeeff; --focus: #6366f1;
+  --ok: #0a7a52; --ok-wash: #e3f5ec; --warn: #8a5a00; --warn-wash: #fdf2d8; --bad: #b3263e; --bad-wash: #fde7eb;
+  --bar: #6366f1; --bar-ref: #c7c5f5; --tok-a: #e8e6ff; --tok-b: #dff3ea; --tok-c: #fdeed3; --tok-d: #fde4ea;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --sans: "Plex Arabic", system-ui, -apple-system, "Segoe UI", "Noto Sans Arabic", "Geeza Pro", Tahoma, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e0e12; --surface: #15151b; --card: #1a1a21; --ink: #ececf1; --muted: #a3a3b2; --line: #2c2c37;
+    --accent: #8b85ff; --accent-ink: #0e0e12; --accent-wash: #24224a; --focus: #8b85ff;
+    --ok: #4fd1a0; --ok-wash: #12352a; --warn: #f0b24a; --warn-wash: #3d2f10; --bad: #ff8197; --bad-wash: #45161f;
+    --bar: #8b85ff; --bar-ref: #3b3870; --tok-a: #2b2952; --tok-b: #173b2f; --tok-c: #3d3114; --tok-d: #461d29;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e0e12; --surface: #15151b; --card: #1a1a21; --ink: #ececf1; --muted: #a3a3b2; --line: #2c2c37;
+  --accent: #8b85ff; --accent-ink: #0e0e12; --accent-wash: #24224a; --focus: #8b85ff;
+  --ok: #4fd1a0; --ok-wash: #12352a; --warn: #f0b24a; --warn-wash: #3d2f10; --bad: #ff8197; --bad-wash: #45161f;
+  --bar: #8b85ff; --bar-ref: #3b3870; --tok-a: #2b2952; --tok-b: #173b2f; --tok-c: #3d3114; --tok-d: #461d29;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--surface); color: var(--ink); font: 400 16px/1.6 var(--sans); overflow-x: hidden; }
+h1, h2, h3 { line-height: 1.25; margin: 0 0 .5rem; font-weight: 600; }
+h1 { font-size: clamp(1.5rem, 4vw, 2.1rem); }
+h2 { font-size: 1.15rem; }
+h3 { font-size: 1rem; }
+p { margin: .4rem 0; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+code, pre { font-family: var(--mono); }
+code { unicode-bidi: isolate; font-size: .85em; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.skip { position: absolute; inset-inline-start: 1rem; top: -3rem; background: var(--card); padding: .5rem 1rem; border-radius: 8px; z-index: 10; }
+.skip:focus { top: .5rem; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+[hidden] { display: none !important; }
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.top { background: var(--card); border-bottom: 1px solid var(--line); }
+.top-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 56px; }
+.brand { display: inline-flex; align-items: center; gap: .55rem; color: var(--ink); text-decoration: none; font-weight: 600; }
+.mark { width: 28px; height: 28px; }
+.mark-ink { fill: var(--ink); }
+.mark-accent { fill: var(--accent); }
+.lang { font: inherit; font-size: .9rem; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: .3rem .9rem; cursor: pointer; }
+
+.intro { padding: 1.6rem 0 1rem; max-width: 860px; }
+.lede { font-size: 1.05rem; }
+.note { color: var(--muted); font-size: .88rem; }
+.lbl { color: var(--muted); font-size: .9rem; }
+.privacy { border-inline-start: 3px solid var(--ok); padding-inline-start: .6rem; }
+
+.layout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px; align-items: start; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-bottom: 16px; min-width: 0; }
+.card-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem; margin-bottom: .3rem; }
+.examples { display: flex; align-items: center; gap: .4rem; flex: 1 1 14rem; min-width: 0; max-width: 24rem; }
+.examples select { flex: 1 1 auto; width: 100%; min-width: 0; }
+select, input[type="text"], input[type="number"], textarea { font: inherit; font-size: .95rem; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: .35rem .5rem; max-width: 100%; min-width: 0; }
+textarea { width: 100%; resize: vertical; line-height: 1.7; }
+textarea[dir="rtl"] { font-size: 1.05rem; }
+.field { display: block; font-weight: 600; font-size: .92rem; margin: .6rem 0 .2rem; }
+.row { display: flex; flex-wrap: wrap; gap: .6rem 1rem; align-items: end; margin: .6rem 0; }
+.num { display: flex; flex-direction: column; gap: 2px; font-size: .85rem; color: var(--muted); flex: 1 1 10rem; min-width: 0; }
+.num input { width: 100%; }
+.check { display: inline-flex; gap: .45rem; align-items: center; font-size: .92rem; }
+.btn { font: inherit; font-size: .92rem; border: 1px solid var(--accent); color: var(--accent); background: var(--card); border-radius: 8px; padding: .35rem .8rem; cursor: pointer; text-decoration: none; display: inline-block; }
+.btn:hover { background: var(--accent-wash); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); }
+.btn.small { font-size: .8rem; padding: .1rem .45rem; }
+.buttons { align-items: center; }
+
+fieldset { border: 0; margin: .6rem 0 0; padding: 0; min-width: 0; }
+legend { padding: 0; margin-bottom: .3rem; }
+.toks { display: grid; grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr)); gap: 6px; }
+.toks legend { grid-column: 1 / -1; }
+.toks label { display: flex; gap: .45rem; align-items: center; padding: .35rem .5rem; border: 1px solid var(--line); border-radius: 10px; cursor: pointer; font-size: .9rem; min-width: 0; }
+.toks label:has(input:checked) { border-color: var(--accent); background: var(--accent-wash); }
+.toks .st { margin-inline-start: auto; font-size: .75rem; color: var(--muted); white-space: nowrap; }
+.toks .st.err { color: var(--bad); }
+
+.results { min-width: 0; }
+.headline { background: var(--accent-wash); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-bottom: 16px; }
+.headline .big { font-size: clamp(1.8rem, 6vw, 2.6rem); font-weight: 600; color: var(--accent); line-height: 1.1; margin: 0; direction: ltr; unicode-bidi: isolate; display: inline-block; }
+.headline .sub { margin: .3rem 0 0; font-size: 1.02rem; }
+.headline .hint { color: var(--muted); margin: 0; }
+.headline select { margin-top: .4rem; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; }
+th, td { padding: .45rem .6rem; border-bottom: 1px solid var(--line); text-align: start; vertical-align: top; }
+thead th { background: var(--surface); font-weight: 600; font-size: .82rem; }
+td.n, th.n { text-align: end; font-variant-numeric: tabular-nums; white-space: nowrap; direction: ltr; unicode-bidi: isolate; }
+th .t, td .t { display: block; font-size: .78rem; color: var(--muted); font-weight: 400; }
+td code { overflow-wrap: anywhere; }
+tr.ref td { color: var(--muted); }
+.fit { color: var(--ok); font-weight: 600; }
+.over { color: var(--bad); font-weight: 600; }
+td input[type="number"] { width: 5.5rem; text-align: end; direction: ltr; }
+#costs th code { white-space: nowrap; }
+td select { max-width: 12rem; }
+
+.chart { display: grid; gap: 6px; }
+.bar { display: grid; grid-template-columns: minmax(7rem, 11rem) minmax(0, 1fr) 4.2rem; gap: .6rem; align-items: center; font-size: .86rem; }
+.bar .track { position: relative; height: 18px; background: var(--surface); border-radius: 4px; overflow: hidden; }
+.bar .fill { position: absolute; inset-block: 0; inset-inline-start: 0; background: var(--bar); border-radius: 4px; }
+.bar .one { position: absolute; inset-block: -2px; width: 2px; background: var(--ink); opacity: .55; }
+.bar .v { text-align: end; font-variant-numeric: tabular-nums; direction: ltr; }
+.bar .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.view { display: flex; flex-wrap: wrap; gap: 3px; line-height: 1.9; font-size: 1.05rem; max-height: 22rem; overflow: auto; padding: 4px; border: 1px solid var(--line); border-radius: 10px; min-height: 3rem; }
+.view .tk { border-radius: 4px; padding: 0 3px; white-space: pre; unicode-bidi: isolate; }
+.view .tk:nth-child(4n+1) { background: var(--tok-a); }
+.view .tk:nth-child(4n+2) { background: var(--tok-b); }
+.view .tk:nth-child(4n+3) { background: var(--tok-c); }
+.view .tk:nth-child(4n) { background: var(--tok-d); }
+.view .tk sub { font-size: .65em; color: var(--muted); }
+.view .cut { width: 3px; background: var(--bad); border-radius: 2px; }
+
+#card-img { width: 100%; max-width: 720px; height: auto; border-radius: 10px; border: 1px solid var(--line); margin-top: .6rem; display: block; }
+.how ul { padding-inline-start: 1.2rem; margin: .3rem 0; }
+.how li { margin: .35rem 0; }
+.cta { background: var(--accent-wash); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-bottom: 24px; }
+.cite code { display: block; white-space: normal; overflow-wrap: anywhere; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: .5rem .6rem; font-size: .85rem; }
+.foot { border-top: 1px solid var(--line); background: var(--card); padding: 1rem 0 1.4rem; font-size: .9rem; }
+.foot-row p { margin: .3rem 0; }
+.links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.fine { color: var(--muted); font-size: .8rem; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .card { padding: 14px; }
+  th, td { padding: .4rem .45rem; }
+  table { font-size: .82rem; }
+  .bar { grid-template-columns: minmax(5.5rem, 7.5rem) minmax(0, 1fr) 3.6rem; font-size: .8rem; }
+  .toks { grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); }
+  #toklist th:nth-child(2), #toklist td:nth-child(2) { display: none; }
+}
+@media (forced-colors: active) {
+  .bar .fill { background: CanvasText; }
+  .view .tk { border: 1px solid CanvasText; }
+}

@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arabic-token-tax-calculator"
+dynamic = ["version"]
+description = "Arabic token-tax calculator: token count, tokens per word, the Arabic/English token ratio, characters per token, context-budget truncation and cost at dated list prices for LLM tokenizers. By Bayanat Labs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0 AND CC-BY-4.0"
+license-files = ["LICENSE", "LICENSE-data", "NOTICE"]
+authors = [{ name = "Bayanat Labs" }]
+dependencies = [
+  "tiktoken>=0.14.0",
+  "tokenizers>=0.22",
+  "sentencepiece>=0.2.0",
+  "huggingface_hub>=0.30",
+]
+keywords = ["arabic", "arabic-nlp", "tokenizer", "token-counter", "llm", "token-cost", "calculator"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Natural Language :: Arabic",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Linguistic",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/Bayanat-Labs/arabic-token-tax-calculator"
+Repository = "https://github.com/Bayanat-Labs/arabic-token-tax-calculator"
+Issues = "https://github.com/Bayanat-Labs/arabic-token-tax-calculator/issues"
+Calculator = "https://huggingface.co/spaces/Bayanat-Labs/arabic-token-tax-calculator"
+
+[project.scripts]
+token-tax = "token_tax_calculator.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["token_tax_calculator"]
+
+[tool.setuptools.package-data]
+token_tax_calculator = ["data/*.json"]
+
+[tool.setuptools.dynamic]
+version = { attr = "token_tax_calculator.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+markers = ["network: downloads tokenizer files (set TOKEN_TAX_NETWORK=1)"]

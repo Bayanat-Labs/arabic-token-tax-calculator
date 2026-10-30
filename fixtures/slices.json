@@ -1,0 +1,86 @@
+[
+ {
+  "slice": "msa_general",
+  "label_en": "Standard Arabic, general",
+  "label_ar": "العربية الفصحى، عام",
+  "illustrative": false,
+  "rows": 10
+ },
+ {
+  "slice": "msa_formal",
+  "label_en": "Standard Arabic, formal and legal style",
+  "label_ar": "العربية الفصحى، أسلوب رسمي وقانوني",
+  "illustrative": false,
+  "rows": 10
+ },
+ {
+  "slice": "msa_business",
+  "label_en": "Standard Arabic, business and customer service",
+  "label_ar": "العربية الفصحى، أعمال وخدمة عملاء",
+  "illustrative": false,
+  "rows": 10
+ },
+ {
+  "slice": "msa_technical",
+  "label_en": "Standard Arabic, technical",
+  "label_ar": "العربية الفصحى، تقني",
+  "illustrative": false,
+  "rows": 10
+ },
+ {
+  "slice": "gulf",
+  "label_en": "Gulf Arabic (illustrative)",
+  "label_ar": "اللهجة الخليجية (للتوضيح)",
+  "illustrative": true,
+  "rows": 10
+ },
+ {
+  "slice": "egyptian",
+  "label_en": "Egyptian Arabic (illustrative)",
+  "label_ar": "اللهجة المصرية (للتوضيح)",
+  "illustrative": true,
+  "rows": 10
+ },
+ {
+  "slice": "levantine",
+  "label_en": "Levantine Arabic (illustrative)",
+  "label_ar": "اللهجة الشامية (للتوضيح)",
+  "illustrative": true,
+  "rows": 10
+ },
+ {
+  "slice": "maghrebi",
+  "label_en": "Maghrebi Arabic (illustrative)",
+  "label_ar": "اللهجة المغاربية (للتوضيح)",
+  "illustrative": true,
+  "rows": 10
+ },
+ {
+  "slice": "arabizi",
+  "label_en": "Arabic in Latin script (Arabizi)",
+  "label_ar": "العربية بالحروف اللاتينية (عربيزي)",
+  "illustrative": true,
+  "rows": 10
+ },
+ {
+  "slice": "code_switch",
+  "label_en": "Arabic-English code-switching",
+  "label_ar": "خلط العربية بالإنجليزية",
+  "illustrative": false,
+  "rows": 10
+ },
+ {
+  "slice": "numbers_dates",
+  "label_en": "Numbers, dates and punctuation",
+  "label_ar": "الأرقام والتواريخ وعلامات الترقيم",
+  "illustrative": false,
+  "rows": 10
+ },
+ {
+  "slice": "diacritised",
+  "label_en": "Fully diacritised Standard Arabic",
+  "label_ar": "عربية فصحى مشكولة بالكامل",
+  "illustrative": false,
+  "rows": 10
+ }
+]

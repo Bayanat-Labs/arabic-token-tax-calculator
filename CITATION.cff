@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use the calculator or its fixtures, please cite it as below and give the version."
+type: software
+title: "Arabic Token-Tax Calculator"
+version: "0.1.0"
+date-released: "2026-10-30"
+license: Apache-2.0
+repository-code: "https://github.com/Bayanat-Labs/arabic-token-tax-calculator"
+url: "https://huggingface.co/spaces/Bayanat-Labs/arabic-token-tax-calculator"
+authors:
+  - name: "Bayanat Labs"
+keywords:
+  - arabic
+  - arabic-nlp
+  - tokenizer
+  - token-counter
+  - llm-cost
+abstract: "Token count, tokens per word, tokens per 1,000 words, the Arabic/English token ratio, characters per token, context-budget truncation and cost at dated list prices for LLM tokenizers, as a browser page and a Python command-line tool that give the same token ids. Code Apache-2.0; fixtures, price table and documentation CC BY 4.0."

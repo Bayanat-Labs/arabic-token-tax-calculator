@@ -1,0 +1,34 @@
+arabic-token-tax-calculator by Bayanat Labs
+Copyright 2026 Bayanat Labs
+
+This product includes software developed by Bayanat Labs (https://bayanatlabs.com).
+
+The code in this repository is licensed under the Apache License 2.0 (LICENSE).
+The fixtures, the tokenizer registry, the price table and the documentation
+listed in LICENSE-data are licensed under the Creative Commons Attribution 4.0
+International License.
+
+Tokenizers. The Python package downloads tokenizer files from their publishers at
+run time (pinned revisions, SHA-256 checked); it contains none. The browser page
+built by scripts/build_space.py contains tokenizer files licensed under MIT or
+Apache-2.0, in a re-encoded form; LICENSES/README.md lists each file, its source,
+its licence and the changes made. tiktoken and js-tiktoken are MIT-licensed
+(Copyright (c) 2022 OpenAI, Shantanu Jain). tokenizers.js (@huggingface/tokenizers)
+is Apache-2.0-licensed (Hugging Face). base64-js is MIT-licensed (Copyright (c)
+2014 Jameson Little). Qwen tokenizer files: Copyright Alibaba Cloud, Apache-2.0.
+DeepSeek tokenizer file: Copyright (c) 2023 DeepSeek, MIT.
+
+Font. The browser page bundles IBM Plex Sans Arabic, version 1.005: the unmodified
+files IBMPlexSansArabic-Regular.woff2 and IBMPlexSansArabic-SemiBold.woff2 from
+IBM's npm package @ibm/plex-sans-arabic 1.1.0. Copyright 2017 IBM Corp. with
+Reserved Font Name "Plex". SIL Open Font License 1.1 (web/fonts/OFL.txt).
+
+Prices in src/token_tax_calculator/data/prices.json are facts read from the
+vendors' public price pages on the retrieval date given for each row; the pages
+themselves are not reproduced.
+
+Runtime dependencies of the Python package: tiktoken (MIT), tokenizers
+(Apache-2.0), sentencepiece (Apache-2.0), huggingface_hub (Apache-2.0).
+
+The Bayanat Labs name, logo and project branding are not licensed under the
+Apache License 2.0 or under any data license in this repository.

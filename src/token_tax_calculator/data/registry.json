@@ -1,0 +1,453 @@
+{
+ "version": "0.1.0",
+ "source": "Tokenizer set, pinned revisions and model lists of the Arabic Token-Tax Index 0.1.0 (https://github.com/Bayanat-Labs/arabic-token-tax-index, tag v0.1.0).",
+ "licence_checked_on": "2026-10-19",
+ "tokenizers": [
+  {
+   "id": "o200k_base",
+   "label": "OpenAI o200k_base",
+   "vendor": "OpenAI",
+   "route": "tiktoken",
+   "encoding": "o200k_base",
+   "library": "tiktoken 0.14.0",
+   "vocab_size": 200019,
+   "models": [
+    "gpt-5 family (gpt-5*)",
+    "gpt-4.5",
+    "gpt-4.1",
+    "gpt-4o",
+    "o1",
+    "o3",
+    "o4-mini",
+    "gpt-oss-120b",
+    "gpt-oss-20b"
+   ],
+   "models_basis": "tiktoken 0.14.0 model-to-encoding table; gpt-oss models checked to give the same counts on the index text",
+   "licence": "MIT",
+   "licence_url": "https://github.com/openai/tiktoken/blob/main/LICENSE",
+   "licence_basis": "The encoding is distributed with tiktoken (MIT) and, for the browser, with js-tiktoken 1.0.21 (MIT).",
+   "bundled": true,
+   "browser_note": "Ranks from js-tiktoken 1.0.21 (MIT).",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.3642,
+    "ratio_ci95": [
+     1.3538,
+     1.3744
+    ],
+    "tokens_per_1000_ar_words": 1883.8,
+    "tokens_per_1000_en_words": 1232.1,
+    "chars_per_token_ar": 2.794,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "cl100k_base",
+   "label": "OpenAI cl100k_base",
+   "vendor": "OpenAI",
+   "route": "tiktoken",
+   "encoding": "cl100k_base",
+   "library": "tiktoken 0.14.0",
+   "vocab_size": 100277,
+   "models": [
+    "gpt-4",
+    "gpt-3.5-turbo"
+   ],
+   "models_basis": "tiktoken 0.14.0 model-to-encoding table",
+   "licence": "MIT",
+   "licence_url": "https://github.com/openai/tiktoken/blob/main/LICENSE",
+   "licence_basis": "The encoding is distributed with tiktoken (MIT) and, for the browser, with js-tiktoken 1.0.21 (MIT).",
+   "bundled": true,
+   "browser_note": "Ranks from js-tiktoken 1.0.21 (MIT).",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 3.0767,
+    "ratio_ci95": [
+     3.0487,
+     3.104
+    ],
+    "tokens_per_1000_ar_words": 4275.3,
+    "tokens_per_1000_en_words": 1239.8,
+    "chars_per_token_ar": 1.231,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "qwen3",
+   "label": "Qwen3",
+   "vendor": "Alibaba Qwen",
+   "route": "hf",
+   "repo_id": "Qwen/Qwen3-235B-A22B",
+   "revision": "8efa61729e24bd65b1d152b5ab5409052aa80e65",
+   "file": "tokenizer.json",
+   "file_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+   "vocab_size": 151669,
+   "models": [
+    "Qwen3-235B-A22B",
+    "Qwen3-8B",
+    "Qwen3-Next-80B-A3B-Instruct"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file, and models whose tokenizer files gave the same counts on the index text",
+   "licence": "Apache-2.0",
+   "licence_url": "https://huggingface.co/Qwen/Qwen3-235B-A22B/blob/8efa61729e24bd65b1d152b5ab5409052aa80e65/LICENSE",
+   "licence_basis": "Model card licence field and LICENSE file at revision 8efa617.",
+   "bundled": true,
+   "browser_note": "tokenizer.json from the model repository, re-serialised without white space.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.5703,
+    "ratio_ci95": [
+     1.5571,
+     1.5832
+    ],
+    "tokens_per_1000_ar_words": 2267.7,
+    "tokens_per_1000_en_words": 1288.4,
+    "chars_per_token_ar": 2.321,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "qwen3.5",
+   "label": "Qwen3.5 / 3.6 / 3.8",
+   "vendor": "Alibaba Qwen",
+   "route": "hf",
+   "repo_id": "Qwen/Qwen3.5-397B-A17B",
+   "revision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+   "file": "tokenizer.json",
+   "file_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+   "vocab_size": 248070,
+   "models": [
+    "Qwen3.5-397B-A17B",
+    "Qwen3.5-27B",
+    "Qwen3.6-27B",
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-27B",
+    "Qwen3.8-2.4T-A95B",
+    "Qwen3.8-Flash-Next"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file, and models whose tokenizer files gave the same counts on the index text",
+   "licence": "Apache-2.0",
+   "licence_url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/LICENSE",
+   "licence_basis": "Model card licence field and LICENSE file at revision 8472618.",
+   "bundled": true,
+   "browser_note": "tokenizer.json from the model repository, re-serialised without white space.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.2586,
+    "ratio_ci95": [
+     1.2492,
+     1.2678
+    ],
+    "tokens_per_1000_ar_words": 1813.1,
+    "tokens_per_1000_en_words": 1285.3,
+    "chars_per_token_ar": 2.903,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "deepseek",
+   "label": "DeepSeek V3 / V4",
+   "vendor": "DeepSeek",
+   "route": "hf",
+   "repo_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+   "revision": "72e1d3230f6c080a530b0a1d46f8eb4602340597",
+   "file": "tokenizer.json",
+   "file_sha256": "8f9f37ca37fdc4f5fd36d5cf4d3b0e8392edb4e894fd10cc0d70b4957c8633cf",
+   "vocab_size": 129280,
+   "models": [
+    "DeepSeek-V4-Pro-0813",
+    "DeepSeek-V4.1-Flash",
+    "DeepSeek-V4-Pro",
+    "DeepSeek-V4-Flash",
+    "DeepSeek-V3.2",
+    "DeepSeek-V3.1",
+    "DeepSeek-V3"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file, and models whose tokenizer files gave the same counts on the index text",
+   "licence": "MIT",
+   "licence_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/72e1d3230f6c080a530b0a1d46f8eb4602340597/LICENSE",
+   "licence_basis": "Model card licence field and LICENSE file at revision 72e1d32.",
+   "bundled": true,
+   "browser_note": "tokenizer.json from the model repository, re-serialised without white space.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.6512,
+    "ratio_ci95": [
+     1.6386,
+     1.6638
+    ],
+    "tokens_per_1000_ar_words": 2277.6,
+    "tokens_per_1000_en_words": 1230.7,
+    "chars_per_token_ar": 2.311,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "mistral-tekken",
+   "label": "Mistral Tekken",
+   "vendor": "Mistral AI",
+   "route": "hf",
+   "repo_id": "mistralai/Mistral-Small-4-119B-2603",
+   "revision": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+   "file": "tokenizer.json",
+   "file_sha256": "2ba5b3330fd84d5376fcca797cfb3b42eee6241ce23e3271e6fb2a115a8751bd",
+   "vocab_size": 131072,
+   "models": [
+    "Mistral-Small-4-119B-2603",
+    "Mistral-Medium-3.5-128B",
+    "Mistral-Large-3-675B-Instruct-2512",
+    "Ministral-3-8B-Instruct-2512",
+    "Mistral-Nemo-Instruct-2407"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file, and models whose tokenizer files gave the same counts on the index text",
+   "licence": "Apache-2.0",
+   "licence_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/README.md",
+   "licence_basis": "Model card licence field at revision a11f36b.",
+   "bundled": true,
+   "browser_note": "tokenizer.json from the model repository, re-serialised without white space.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.2407,
+    "ratio_ci95": [
+     1.2315,
+     1.2498
+    ],
+    "tokens_per_1000_ar_words": 1808.3,
+    "tokens_per_1000_en_words": 1300.4,
+    "chars_per_token_ar": 2.911,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "gemma4",
+   "label": "Gemma 4 / Fanar-2",
+   "vendor": "Google; QCRI",
+   "route": "hf",
+   "repo_id": "google/gemma-4-31B-it",
+   "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+   "file": "tokenizer.json",
+   "file_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+   "vocab_size": 262144,
+   "models": [
+    "gemma-4-31B-it",
+    "gemma-4-26B-A4B-it",
+    "gemma-4-E4B-it",
+    "Fanar-2-27B-Instruct"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file, and models whose tokenizer files gave the same counts on the index text",
+   "licence": "Apache-2.0",
+   "licence_url": "https://ai.google.dev/gemma/docs/gemma_4_license",
+   "licence_basis": "Model card licence field and licence link at revision 842da37.",
+   "bundled": true,
+   "browser_note": "tokenizer.json from the model repository, re-serialised without white space.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.4823,
+    "ratio_ci95": [
+     1.4704,
+     1.4942
+    ],
+    "tokens_per_1000_ar_words": 2105.3,
+    "tokens_per_1000_en_words": 1267.2,
+    "chars_per_token_ar": 2.5,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "falcon3",
+   "label": "Falcon3",
+   "vendor": "TII",
+   "route": "hf",
+   "repo_id": "tiiuae/Falcon3-7B-Instruct",
+   "revision": "1e57a0ecd176c7c139f289c60a74e57f887c3dfb",
+   "file": "tokenizer.json",
+   "file_sha256": "96c1b62711ea59cb36cf4ab46cc551fc64b2168ac0a288448026088fb9ec7f4a",
+   "vocab_size": 131072,
+   "models": [
+    "Falcon3-7B-Instruct"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file",
+   "licence": "TII Falcon licence (falcon-llm-license)",
+   "licence_url": "https://falconllm.tii.ae/falcon-terms-and-conditions.html",
+   "licence_basis": "Model card licence field at revision 1e57a0e.",
+   "bundled": false,
+   "browser_note": "TII Falcon licence (based on Apache-2.0, with an acceptable use policy that has to be carried into any agreement governing distribution). It is not a permissive licence, so the browser page does not include this file and shows the index measurement instead; the command-line tool downloads the file from the model repository at run time.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 3.3533,
+    "ratio_ci95": [
+     3.3177,
+     3.3883
+    ],
+    "tokens_per_1000_ar_words": 4788.2,
+    "tokens_per_1000_en_words": 1274.0,
+    "chars_per_token_ar": 1.099,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "falcon-h1",
+   "label": "Falcon-H1",
+   "vendor": "TII",
+   "route": "hf",
+   "repo_id": "tiiuae/Falcon-H1-34B-Instruct",
+   "revision": "6e6890e26cba1f58b1e6ee70d654ddf054f9fce8",
+   "file": "tokenizer.json",
+   "file_sha256": "3773232503e494688ed696239e23b10ce36425290350d07b9e1067f9d6fbbab7",
+   "vocab_size": 261120,
+   "models": [
+    "Falcon-H1-34B-Instruct"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file",
+   "licence": "TII Falcon licence (falcon-llm-license)",
+   "licence_url": "https://falconllm.tii.ae/falcon-terms-and-conditions.html",
+   "licence_basis": "Model card licence field at revision 6e6890e.",
+   "bundled": false,
+   "browser_note": "TII Falcon licence (based on Apache-2.0, with an acceptable use policy that has to be carried into any agreement governing distribution). It is not a permissive licence, so the browser page does not include this file and shows the index measurement instead; the command-line tool downloads the file from the model repository at run time.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.0394,
+    "ratio_ci95": [
+     1.0319,
+     1.0468
+    ],
+    "tokens_per_1000_ar_words": 1508.3,
+    "tokens_per_1000_en_words": 1294.7,
+    "chars_per_token_ar": 3.49,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "falcon-h1r",
+   "label": "Falcon-H1R",
+   "vendor": "TII",
+   "route": "hf",
+   "repo_id": "tiiuae/Falcon-H1R-7B",
+   "revision": "a6f74bf181389908efd6970878d7ee2b42f5d417",
+   "file": "tokenizer.json",
+   "file_sha256": "a1a906251e685c2ff1fbb0ab2e36d9d1b276e6283a7a9a3e721c5b1923c017c0",
+   "vocab_size": 130048,
+   "models": [
+    "Falcon-H1R-7B"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file",
+   "licence": "TII Falcon licence (falcon-llm-license)",
+   "licence_url": "https://falconllm.tii.ae/falcon-terms-and-conditions.html",
+   "licence_basis": "Model card licence field at revision a6f74bf.",
+   "bundled": false,
+   "browser_note": "TII Falcon licence (based on Apache-2.0, with an acceptable use policy that has to be carried into any agreement governing distribution). It is not a permissive licence, so the browser page does not include this file and shows the index measurement instead; the command-line tool downloads the file from the model repository at run time.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.1199,
+    "ratio_ci95": [
+     1.1113,
+     1.1282
+    ],
+    "tokens_per_1000_ar_words": 1677.2,
+    "tokens_per_1000_en_words": 1336.2,
+    "chars_per_token_ar": 3.138,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "allam",
+   "label": "ALLaM",
+   "vendor": "HUMAIN",
+   "route": "sentencepiece",
+   "repo_id": "humain-ai/ALLaM-7B-Instruct-preview",
+   "revision": "a28dd1e67420cde72d3629c8633a974cf7d9c366",
+   "file": "tokenizer.model",
+   "file_sha256": "feff3deb3537c4a47b77585053ad2aa00484da7907b188e0111cbed1f4592e67",
+   "vocab_size": 64000,
+   "models": [
+    "ALLaM-7B-Instruct-preview"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file",
+   "licence": "Apache-2.0",
+   "licence_url": "https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview/blob/a28dd1e67420cde72d3629c8633a974cf7d9c366/README.md",
+   "licence_basis": "Model card licence field at revision a28dd1e.",
+   "bundled": true,
+   "browser_note": "tokenizer.json converted from the SentencePiece tokenizer.model of the model repository (transformers 5.20.2 converter, legacy mode); the parity check compares it with SentencePiece.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 0.9291,
+    "ratio_ci95": [
+     0.9226,
+     0.9357
+    ],
+    "tokens_per_1000_ar_words": 1407.6,
+    "tokens_per_1000_en_words": 1351.7,
+    "chars_per_token_ar": 3.739,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  },
+  {
+   "id": "fanar-1",
+   "label": "Fanar-1",
+   "vendor": "QCRI",
+   "route": "hf",
+   "repo_id": "QCRI/Fanar-1-9B-Instruct",
+   "revision": "d30938d0efb1fd251727ee96df6987802ff84662",
+   "file": "tokenizer.json",
+   "file_sha256": "21cf92b1210853eb91fb856a67b6062b06578194cac590326c8e56af7ec71d88",
+   "vocab_size": 128256,
+   "models": [
+    "Fanar-1-9B-Instruct"
+   ],
+   "models_basis": "the model repository that publishes the tokenizer file",
+   "licence": "Apache-2.0",
+   "licence_url": "https://huggingface.co/QCRI/Fanar-1-9B-Instruct/blob/d30938d0efb1fd251727ee96df6987802ff84662/README.md",
+   "licence_basis": "Model card licence field at revision d30938d.",
+   "bundled": true,
+   "browser_note": "tokenizer.json from the model repository, re-serialised without white space.",
+   "licence_checked_on": "2026-10-19",
+   "index_reference": {
+    "slice": "UN 2015 test set",
+    "pairs": 3990,
+    "ratio": 1.4737,
+    "ratio_ci95": [
+     1.4616,
+     1.4856
+    ],
+    "tokens_per_1000_ar_words": 2144.6,
+    "tokens_per_1000_en_words": 1298.4,
+    "chars_per_token_ar": 2.454,
+    "index_version": "0.1.0",
+    "run_date": "2026-10-16"
+   }
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "arabic-token-tax-calculator-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser page of the Arabic Token-Tax Calculator (static; no build step at run time).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "vendor": "node tools/bundle_vendor.mjs",
+    "parity": "node tools/parity_node.mjs"
+  },
+  "devDependencies": {
+    "@huggingface/tokenizers": "0.2.0",
+    "esbuild": "0.28.2",
+    "js-tiktoken": "1.0.21"
+  }
+}

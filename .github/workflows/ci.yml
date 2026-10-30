@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install the package and the test tools
+        run: python -m pip install ".[test]"
+      - name: Run the tests
+        run: python -m pytest -q
+
+  fixtures:
+    name: Re-count the fixtures with the pinned tokenizer files
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: python -m pip install ".[test]"
+      - name: Network tests (downloads tokenizer files, checks SHA-256, compares counts)
+        env:
+          TOKEN_TAX_NETWORK: "1"
+        run: python -m pytest -q tests/test_network.py
+
+  browser:
+    name: Build the browser page and check parity, privacy and layout
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+      - name: Install
+        run: |
+          python -m pip install -e ".[test]" "transformers==5.20.2" protobuf "playwright==1.64.0"
+          python -m playwright install --with-deps chromium
+          npm ci --prefix web
+      - name: Build the page
+        run: python scripts/build_space.py --out dist/space
+      - name: Parity in Node
+        working-directory: web
+        run: node tools/parity_node.mjs ../dist/space
+      - name: Parity, privacy and layout in Chromium
+        run: python scripts/check_space.py --space dist/space --report dist/space_check.json

@@ -1,0 +1,202 @@
+{
+ "version": "0.1.0",
+ "source": "Model rows of the price table of the Arabic Token-Tax Index 0.1.0 (config/prices.yaml); prices, model versions and source URLs re-read from the vendors' official price pages on 2026-10-30 (index_price keeps the index value and date).",
+ "notes": "List prices in USD per million tokens as shown on the vendors' official price pages at checked_at; no batch, cache or off-peak discounts. A row with a price_note is not a regular list price: the note says why (for example a promotional price and the date it runs to). page_sha256 is the SHA-256 of the page HTML as served.",
+ "price_date": "2026-10-30",
+ "prices": [
+  {
+   "vendor": "OpenAI",
+   "model": "gpt-5.6-sol",
+   "model_version_on_page": null,
+   "tokenizer_id": "o200k_base",
+   "mapping_basis": "tiktoken 0.14.0 maps model names starting with gpt-5 to o200k_base",
+   "tier": "Promotional price; short context, Standard processing (not Flex/Batch, Fast or Ultrafast)",
+   "price_note": "promotional price, at least through 21 Nov 2026",
+   "promotional_through": "2026-11-21",
+   "currency": "USD",
+   "input_usd_per_mtok": 4.0,
+   "output_usd_per_mtok": 20.0,
+   "source_url": "https://developers.openai.com/api/docs/pricing",
+   "checked_at": "2026-10-30T11:38:48Z",
+   "page_sha256": "52118363bc565da0899ce3e034aeb9fc7f5a7daa1aa1a1292721a64f641bac05",
+   "index_price": {
+    "input_usd_per_mtok": 4.0,
+    "output_usd_per_mtok": 20.0,
+    "checked_at": "2026-10-16T00:00:19Z"
+   }
+  },
+  {
+   "vendor": "OpenAI",
+   "model": "gpt-5.3-codex",
+   "model_version_on_page": null,
+   "tokenizer_id": "o200k_base",
+   "mapping_basis": "tiktoken 0.14.0 maps model names starting with gpt-5 to o200k_base",
+   "tier": "Specialized models table, Standard processing (not Fast)",
+   "price_note": null,
+   "promotional_through": null,
+   "currency": "USD",
+   "input_usd_per_mtok": 1.75,
+   "output_usd_per_mtok": 14.0,
+   "source_url": "https://developers.openai.com/api/docs/pricing",
+   "checked_at": "2026-10-30T11:38:48Z",
+   "page_sha256": "52118363bc565da0899ce3e034aeb9fc7f5a7daa1aa1a1292721a64f641bac05",
+   "index_price": {
+    "input_usd_per_mtok": 1.75,
+    "output_usd_per_mtok": 14.0,
+    "checked_at": "2026-10-16T00:00:19Z"
+   }
+  },
+  {
+   "vendor": "DeepSeek",
+   "model": "deepseek-v4-pro",
+   "model_version_on_page": "DeepSeek-V4-Pro-0813",
+   "tokenizer_id": "deepseek",
+   "mapping_basis": "the page names the model version DeepSeek-V4-Pro-0813, whose published tokenizer file is measured",
+   "tier": "Peak rate, cache-miss input (off-peak rates are half)",
+   "price_note": null,
+   "promotional_through": null,
+   "currency": "USD",
+   "input_usd_per_mtok": 1.32,
+   "output_usd_per_mtok": 3.96,
+   "source_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+   "checked_at": "2026-10-30T11:38:48Z",
+   "page_sha256": "579412351262de19f1b067420542d042dc9433f389be6d252d0f4c41b82f515b",
+   "index_price": {
+    "input_usd_per_mtok": 1.32,
+    "output_usd_per_mtok": 3.96,
+    "checked_at": "2026-10-16T00:00:19Z"
+   }
+  },
+  {
+   "vendor": "DeepSeek",
+   "model": "deepseek-flash",
+   "model_version_on_page": "DeepSeek-V4.1-Flash-1017",
+   "tokenizer_id": "deepseek",
+   "mapping_basis": "the page names the model version DeepSeek-V4.1-Flash-1017; its published tokenizer.json (revision 1bae0e1) is byte-identical to that of DeepSeek-V4.1-Flash, which gave the same counts as the measured file on the index text",
+   "tier": "Peak rate, cache-miss input (off-peak rates are half)",
+   "price_note": null,
+   "promotional_through": null,
+   "currency": "USD",
+   "input_usd_per_mtok": 0.3,
+   "output_usd_per_mtok": 1.2,
+   "source_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+   "checked_at": "2026-10-30T11:38:48Z",
+   "page_sha256": "579412351262de19f1b067420542d042dc9433f389be6d252d0f4c41b82f515b",
+   "index_price": {
+    "input_usd_per_mtok": 0.3,
+    "output_usd_per_mtok": 1.2,
+    "checked_at": "2026-10-16T00:00:19Z"
+   }
+  },
+  {
+   "vendor": "Alibaba Cloud",
+   "model": "qwen3.5-397b-a17b",
+   "model_version_on_page": "Qwen3.5-397B-A17B",
+   "tokenizer_id": "qwen3.5",
+   "mapping_basis": "open-weight model of the same name; its published tokenizer file is measured",
+   "tier": "International deployment, 0 to 256K input tokens per request",
+   "price_note": null,
+   "promotional_through": null,
+   "currency": "USD",
+   "input_usd_per_mtok": 0.6,
+   "output_usd_per_mtok": 3.6,
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+   "checked_at": "2026-10-30T11:38:48Z",
+   "page_sha256": "7d329097f2caeb49572b130c3d14a9e02dba813ac82d814418d4efa8152c6c36",
+   "index_price": {
+    "input_usd_per_mtok": 0.6,
+    "output_usd_per_mtok": 3.6,
+    "checked_at": "2026-10-16T00:00:36Z"
+   }
+  },
+  {
+   "vendor": "Alibaba Cloud",
+   "model": "qwen3.8-27b",
+   "model_version_on_page": "Qwen3.8-27B",
+   "tokenizer_id": "qwen3.5",
+   "mapping_basis": "open-weight model of the same name; its published tokenizer file gives the same counts",
+   "tier": "International deployment, 0 to 1M input tokens per request",
+   "price_note": null,
+   "promotional_through": null,
+   "currency": "USD",
+   "input_usd_per_mtok": 0.5,
+   "output_usd_per_mtok": 3.0,
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+   "checked_at": "2026-10-30T11:38:48Z",
+   "page_sha256": "7d329097f2caeb49572b130c3d14a9e02dba813ac82d814418d4efa8152c6c36",
+   "index_price": {
+    "input_usd_per_mtok": 0.5,
+    "output_usd_per_mtok": 3.0,
+    "checked_at": "2026-10-16T00:00:36Z"
+   }
+  },
+  {
+   "vendor": "Alibaba Cloud",
+   "model": "qwen3.8-2.4t-a95b",
+   "model_version_on_page": "Qwen3.8-2.4T-A95B",
+   "tokenizer_id": "qwen3.5",
+   "mapping_basis": "open-weight model of the same name; its published tokenizer file gives the same counts",
+   "tier": "International deployment, 0 to 1M input tokens per request",
+   "price_note": null,
+   "promotional_through": null,
+   "currency": "USD",
+   "input_usd_per_mtok": 2.0,
+   "output_usd_per_mtok": 6.0,
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+   "checked_at": "2026-10-30T11:38:48Z",
+   "page_sha256": "7d329097f2caeb49572b130c3d14a9e02dba813ac82d814418d4efa8152c6c36",
+   "index_price": {
+    "input_usd_per_mtok": 2.0,
+    "output_usd_per_mtok": 6.0,
+    "checked_at": "2026-10-16T00:00:36Z"
+   }
+  }
+ ],
+ "no_price": [
+  {
+   "tokenizer_id": "cl100k_base",
+   "reason": "The index price table has no row for these models. The OpenAI price page read on 2026-10-30 lists gpt-4-0613 and gpt-3.5-turbo in its full model list; give your own price to include them.",
+   "checked_on": "2026-10-30"
+  },
+  {
+   "tokenizer_id": "qwen3",
+   "reason": "The Qwen3 open-weight models measured here (Qwen3-235B-A22B, Qwen3-8B, Qwen3-Next-80B-A3B-Instruct) are not listed on the Alibaba Cloud Model Studio price page read on 2026-10-30.",
+   "checked_on": "2026-10-30"
+  },
+  {
+   "tokenizer_id": "mistral-tekken",
+   "reason": "The official pricing page gives no per-model API price table in its archived text; its one example names \"Mistral Large\" without a version.",
+   "checked_on": "2026-10-16"
+  },
+  {
+   "tokenizer_id": "gemma4",
+   "reason": "The official Gemini API price page lists Gemma 4 on the free tier only (paid tier: not available).",
+   "checked_on": "2026-10-16"
+  },
+  {
+   "tokenizer_id": "falcon3",
+   "reason": "No official per-token price page was archived for the index price table.",
+   "checked_on": "2026-10-16"
+  },
+  {
+   "tokenizer_id": "falcon-h1",
+   "reason": "No official per-token price page was archived for the index price table.",
+   "checked_on": "2026-10-16"
+  },
+  {
+   "tokenizer_id": "falcon-h1r",
+   "reason": "No official per-token price page was archived for the index price table.",
+   "checked_on": "2026-10-16"
+  },
+  {
+   "tokenizer_id": "allam",
+   "reason": "No official per-token price page was archived for the index price table.",
+   "checked_on": "2026-10-16"
+  },
+  {
+   "tokenizer_id": "fanar-1",
+   "reason": "No official per-token price page was archived for the index price table.",
+   "checked_on": "2026-10-16"
+  }
+ ]
+}

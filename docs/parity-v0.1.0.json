@@ -1,0 +1,185 @@
+{
+ "parity": {
+  "o200k_base": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 36019,
+   "long_text_tokens_python": 36019,
+   "ok": true
+  },
+  "cl100k_base": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 70643,
+   "long_text_tokens_python": 70643,
+   "ok": true
+  },
+  "qwen3": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 44010,
+   "long_text_tokens_python": 44010,
+   "ok": true
+  },
+  "qwen3.5": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 35663,
+   "long_text_tokens_python": 35663,
+   "ok": true
+  },
+  "deepseek": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 41205,
+   "long_text_tokens_python": 41205,
+   "ok": true
+  },
+  "mistral-tekken": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 34600,
+   "long_text_tokens_python": 34600,
+   "ok": true
+  },
+  "gemma4": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 37715,
+   "long_text_tokens_python": 37715,
+   "ok": true
+  },
+  "allam": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 29264,
+   "long_text_tokens_python": 29264,
+   "ok": true
+  },
+  "fanar-1": {
+   "texts": 242,
+   "identical_ids": 242,
+   "long_text_tokens_browser": 40382,
+   "long_text_tokens_python": 40382,
+   "ok": true
+  }
+ },
+ "long_text_chars": 100000,
+ "outside_requests": [],
+ "console_errors": [],
+ "storage": {
+  "localStorage": 0,
+  "sessionStorage": 0,
+  "cookies": 0,
+  "indexedDB": 0
+ },
+ "layout": {
+  "1280-en": {
+   "scrollWidth": 1280,
+   "clientWidth": 1280,
+   "ok": true
+  },
+  "1280-ar": {
+   "scrollWidth": 1280,
+   "clientWidth": 1280,
+   "ok": true
+  },
+  "375-en": {
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "ok": true
+  },
+  "375-ar": {
+   "scrollWidth": 375,
+   "clientWidth": 375,
+   "ok": true
+  }
+ },
+ "numbers": {
+  "o200k_base": {
+   "browser_ar": 33,
+   "python_ar": 33,
+   "browser_en": 27,
+   "python_en": 27
+  },
+  "qwen3.5": {
+   "browser_ar": 32,
+   "python_ar": 32,
+   "browser_en": 27,
+   "python_en": 27
+  },
+  "deepseek": {
+   "browser_ar": 42,
+   "python_ar": 42,
+   "browser_en": 27,
+   "python_en": 27
+  },
+  "mistral-tekken": {
+   "browser_ar": 31,
+   "python_ar": 31,
+   "browser_en": 27,
+   "python_en": 27
+  },
+  "allam": {
+   "browser_ar": 22,
+   "python_ar": 22,
+   "browser_en": 27,
+   "python_en": 27
+  }
+ },
+ "edge_cases": {
+  "o200k_base": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  },
+  "cl100k_base": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  },
+  "qwen3": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  },
+  "qwen3.5": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  },
+  "deepseek": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  },
+  "mistral-tekken": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  },
+  "gemma4": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  },
+  "allam": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  },
+  "fanar-1": {
+   "texts": 11,
+   "identical_ids": 11,
+   "ok": true
+  }
+ },
+ "text_stats": {
+  "texts": 243,
+  "identical": 243,
+  "ok": true
+ },
+ "numbers_example": "fx003",
+ "big_text_bytes": 5242906,
+ "ok": true
+}
